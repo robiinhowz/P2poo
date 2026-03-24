@@ -2,8 +2,20 @@ package model;
 
 public class Mesa {
     private int numero;
-    private int status;
+    private String status;
 
-    public void alterarStatusMesa(int numero, int status) {
+    public Mesa(int numero, String status)
+    {
+        this.numero = numero;
+        this.status = status;
     }
+    
+    public void alterarStatusMesa(int numero, String status) {
+        this.status = status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
 }
